@@ -1,0 +1,190 @@
+.pomodoro-timer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: center; */
+  height: 80vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.pomodoro-timer * {
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+
+h2 {
+  font-size: 1.4em;
+  margin: 10px 0 7px 0;
+}
+
+.sub-text {
+  font-size: 0.8em;
+}
+
+/* ------------------------
+input number css reset
+https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box#answer-4298216
+------------------------ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+
+/* ------------------------
+Timer set up 
+------------------------ */
+
+.timer-setup-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: transparent;
+  
+}
+
+.timer-setup {
+  margin: 0 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5px 16px;
+  min-width: 200px;
+  border: 1px solid black;
+  border-radius: .5rem;
+}
+
+.timer-setup h2::first-letter {
+  text-transform: uppercase;
+}
+
+.timer-setup input[type=range] {
+  width: 90%;
+  margin: 8px 0;
+  /* outline: 1px solid #eee; */
+}
+
+.timer-setup__controls {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 90%;
+}
+
+.timer-setup__controls button {
+  --size: 34px;
+
+  width: var(--size);
+  height: var(--size);
+  font-size: 20px;
+  background-color: rgb(221, 132, 217);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.timer-setup__controls input[type=number] {
+  width: 70px;
+  text-align: center;
+  margin: 0 8px;
+  background-color: rgb(194, 173, 246);
+  font-size: 1.25em;
+} 
+
+/* ------------------------
+Timer 
+------------------------ */
+
+.timer-view {
+  display: flex;
+  display: block;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-width: 225px;
+  min-height: 225px;
+  margin: 16px;
+  margin-bottom: 8px;
+  padding-top: 10px;
+  position: relative;
+
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.timer-view > h2 {
+  font-size: 1.75em;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+.time-left {
+  font-size: 4em;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 255, 0);
+
+  /* border: 1px solid #aaa; */
+}
+
+/* ------------------------
+Timer controls 
+------------------------ */
+.time-left{
+  color: #000;
+}
+.timer-controls button {
+  --w: 75px;
+  --h: 50px;
+
+  width: var(--w);
+  height: var(--h);
+
+  font-size: 1em;
+  margin: 8px 8px;
+  background-color: rgb(194, 173, 246);
+  border-radius: 3rem;
+  font-weight: 700;
+}
+.pomodoro-timer h2{
+  background-color: transparent;
+  color: white;
+  font-weight: 900;
+}
+.timer-setup h2{
+  color: black;
+}
+p{
+  color: #000;
+}
+.timeleftp{
+   background-color: #00000000;
+}
+
+
+
+
+@media (max-width: 587px) {
+  .pomodoro-timer{
+    margin-top: 3rem;
+  }
+  
+
+}
+.timer-controls{
+  background-color: transparent;
+}
+
