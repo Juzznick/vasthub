@@ -15,7 +15,7 @@ function RegisterandLogin() {
     e.preventDefault()
     const email = e.target.email.value
     const password = e.target.password.value
-    if (type == 'signup') {
+    if (type === 'signup') {
       createUserWithEmailAndPassword(database, email, password).then(data => {
         console.log(data, 'authData')
         history('/home')
@@ -43,8 +43,8 @@ function RegisterandLogin() {
       <div className='Login'>
         <div className='Login-box'>
           <div className='regpg-sgninsgnup'>
-            <div onClick={() => setLogin(false)} className={login == false ? 'activeColor' : 'pointer'}  >SignUp</div>
-            <div onClick={() => setLogin(true)} className={login == true ? 'activeColor' : 'pointer'}  >SignIn</div>
+            <div onClick={() => setLogin(false)} className={login === false ? 'activeColor' : 'pointer'}  >SignUp</div>
+            <div onClick={() => setLogin(true)} className={login === true ? 'activeColor' : 'pointer'}  >SignIn</div>
           </div>
           <h1>{login ? 'SignIn' : 'SignUp'}</h1>
           <form onSubmit={(e) => handleSubmit(e, login ? 'signin' : 'signup')}>
@@ -59,7 +59,7 @@ function RegisterandLogin() {
       </div>
 
       <div className='Login'>
-        <img src="loginimg.png"></img>
+        <img alt="sgpa" src="loginimg.png"></img>
       </div>
     </div>
 

@@ -10,17 +10,6 @@ function Attendex() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   const handleSubmit = event => {
     setMedical('');
     event.preventDefault();
@@ -37,7 +26,7 @@ function Attendex() {
       setLeft('');
     }
 
-    if (Number(presentCount) == 0 || Number(absentCount) == 0) {
+    if (Number(presentCount) === 0 || Number(absentCount) === 0) {
       setResult("Enter both the Values!");
       setLeft("");
     }
@@ -90,7 +79,7 @@ function Attendex() {
 
 
       <div class="attendex-sub-div-spcl-left attendex-sub-div-spcl">
-        <img src="../student.png" />
+        <img alt="sgpa" src="../student.png" />
       </div>
 
       <div className="attendex-sub-div">

@@ -14,7 +14,6 @@ function Cgpa() {
     const [cgpaS7, setCgpaS7] = useState('');
     const [cgpaS8, setCgpaS8] = useState('');
     const [result, setResult] = useState('');
-    let n = 8;
 
     const reset = event => {
         event.preventDefault();
@@ -203,7 +202,7 @@ function Cgpa() {
         <div className="mainDiv mainDivCgpa">
 
             <div class="attendex-sub-div-spcl-left attendex-sub-div-spcl cgpa-img">
-                <img src="../cgpa.png" />
+                <img alt="sgpa" src="../cgpa.png" />
             </div>
 
             <form className="form">

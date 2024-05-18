@@ -71,7 +71,7 @@ function Sgpa() {
 
             <div className="sgpa-sub-div">
                 <div class="attendex-sub-div-spcl-left attendex-sub-div-spcl cgpa-img">
-                    <img src="../sgpa.png" />
+                    <img alt="sgpa" src="../sgpa.png" />
                 </div>
                 <p>Enter your Grades & Credits to calculate your Sgpa</p>
             </div>

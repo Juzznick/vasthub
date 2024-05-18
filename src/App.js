@@ -6,21 +6,13 @@ import Sgpa from './sgpa';
 import Attendex from './attendex';
 import Footer from './footer';
 import RegisterandLogin from './RegisterandLogin';
-import { BrowseRouter, Routes, Route, Link, NavLink, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, NavLink, BrowserRouter } from 'react-router-dom';
 import Pomodoro from './pomodoro-components/pomodoroooo'
 import Todo from './todolist'
 import ForgotPassword from './forgotpassword.jsx';
 import Contact from './contact.jsx';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-
-
-
-
-
-
-
 
 
 function App() {
